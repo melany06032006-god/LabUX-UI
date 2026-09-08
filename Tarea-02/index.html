@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width, initial-scale:1.0">
+        <title>Medellin: Tu Guía de Viaje - Guias oficiales turismo</title>
+        <meta name="description" content="Descrubí qué hacer en Medellin. información útil antes de llegar, guías de alojamiento, atractivos turísticos, agenda cultural y mapas de la ciudad.">
+        <meta name="robots" content="index, follow">
+
+        <!-- Linkeo el CSS -->
+        <link href="style.css" rel="stylesheet">
+
+        <!-- Google font -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caacupe+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <!-- Cabecera principal del sitio -->
+        <header id="cabecera-web">
+            <!-- Logo del sitio 
+            href-> la dirección a donde voy al dar clic  
+            -->
+            <a href="index.html" aria-label="Ir a la página de inicio de Turismo de Medellin">
+                <img src="assets/logo-travel-web.png" alt="Logotipo oficial de Medellin.Travel">
+            </a>
+
+            <!-- Navegador principal -->
+            <nav role="navigation" aria-label="Menu principal">
+                  <a href="" class="bt-principal">Qué hacer</a>
+                  <a href="" class="bt-principal">Antes de llegar</a>
+                  <a href="" class="bt-principal">Información</a>
+                  <a href="" class="bt-principal">Contacto</a>
+            </nav>
+
+        </header>
+
+
+
+        <!-- Contenido principal del sitio -->
+        <main role="main">
+
+            <h1 class="hide-element" aria-hidden="true">Medellin: Tu Guía de Viaje - Guias oficiales turismo</h1>
+
+            <!-- Actividades destacadas-->
+            <section id="wrap-destacadas">
+                <h2>Actividades destacadas en la ciudad</h2>
+                
+                <div class="flex-elements">
+
+                    <!-- tarjeta -->
+                    <article class="articulo-index" role="article">
+                        <img src="assets/bandeja-paisa.jpg" alt="Bandeja Paisa">
+                        <h3>Dónde Comer</h3>
+                        <p>En este buscador, vas a poder filtrar por nombre, tipo de establecimiento y por barrio</p>
+                        <a href="" class="bt-mas" aria-label="Ir al buscador de restaurantes y de comida en Medellin">ver más</a>
+                    </article>
+
+                    <!-- tarjeta -->
+                    <article class="articulo-index" role="article">
+                        <img src="assets/arepa-antioqueña.jpg" alt="Arepa antioqueña">
+                        <h3>¿Cuál es el sabor de la gastronomía antioqueña?</h3>
+                        <p>En Medellin vas a encontrar platos típicos y comida de todo el mundo</p>
+                        <a href="" class="bt-mas" aria-label="Ver información sobre grastonomía antioqueña">ver más</a>
+                    </article>
+
+                    <!-- tarjeta -->
+                    <article class="articulo-index" role="article">
+                        <img src="assets/plaza-botero.jpg" alt="Plaza Botero barrio La Candelaria">
+                        <h3>Plazas, Parques y Calles</h3>
+                        <p>Admira las icónicas esculturas del maestro Fernando Botero y recorre uno de los lugares culturales más representativos de Medellín.</p>
+                        <a href="" class="bt-mas" aria-label="Ver más información sobre los patios gastronómicos de la ciudad">ver más</a>
+                    </article>
+
+
+                </div>
+
+            </section>
+            <!-- Fin de actividades destacadas-->
+
+            <!-- Contenido Multimedia -->
+            <section id="wrap-experiencias">
+                <h2>Experiencia en Medellin</h2>
+                <div>
+                    <video controls autoplay loop width="100%" height="auto" aria-label="Video sobre la ciudad de Medellin">
+                        <source src="assets/video-medellin.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            <!-- Fin de Contenido Multimedia -->
+
+
+
+            <!-- Contenidos Destacados -->
+            <section>
+                <h2>Destacados de la Semana</h2>
+                <div class="flex-elements">
+                    
+                    <!-- Tarjeta Destacada 1 -->
+                    <article class="articulo-index" role="article">
+                        <img src="assets/destacado-esculturas.jpg" alt="Esculturas de Fernando Botero en la Plaza Botero de Medellín" width="400" height="250">
+                        <h3>Circuitos de Museos Gratuitos</h3>
+                        <a href="" aria-label="Ver más sobre las esculturas de Botero">Ver Más</a>
+                    </article>
+
+                    <!-- Tarjeta Destacada 2 -->
+                    <article class="articulo-index" role="article">
+                        <img src="assets/destacado-murales.jpg" alt="Murales y escaleras eléctricas de la Comuna 13 en Medellín" width="400" height="250">
+                        <h3>Comuna 13: Arte y Transformación</h3>
+                        <a href="" aria-label="Ver más sobre los murales y escaleras electricas">Ver Más</a>
+                    </article>
+
+                    <!-- Tarjeta Destacada 3 -->
+                    <article class="articulo-index" role="article">
+                        <img src="assets/destacado-parque.jpg" alt="Senderos ecológicos del Parque Arví en Medellín" width="400" height="250">
+                        <h3>Parque Arví</h3>
+                        <a href="" aria-label="Ver más sobre los senderos ecologicos del parque arví">Ver Más</a>
+                    </article>
+
+                </div>
+            </section>
+
+
+            <!-- Ubicación Geográfica -->
+            <section aria-labelledby="titulo-mapa">
+                <h2 id="titulo-mapa">Ubicación y Centros de Atención al Turista</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.088127400739!2d-75.56861409999999!3d6.2521184000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428fecb4dff77%3A0x2e5a7e51ab929892!2sPlaza%20Botero!5e0!3m2!1ses-419!2sco!4v1786035519541!5m2!1ses-419!2sco" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Mapa interactivo de Medellín con la ubicación de la Plaza Botero y puntos de interés turístico">
+                    </iframe>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Pie de Página Institucional -->
+    <footer role="contentinfo">
+
+            <!-- Identificador Institucional del Footer -->
+            <div class="footer-brand">
+                <img src="assets/logo-footer.png" alt="Logotipo oficial del Gobierno de la Ciudad de Medellin">
+            </div>
+
+            <!-- Columnas de Enlaces del Footer -->
+            <div>
+                
+                <!-- Lista 1: Prestadores -->
+                <nav>
+                    <h3 id="footer-prestadores">Prestadores</h3>
+                    <ul>
+                        <li><a href="/alquileres-temporales">Alquileres Temporales</a></li>
+                        <li><a href="/alojamientos-turisticos">Alojamientos turísticos</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Lista 2: Profesionales -->
+                <nav>
+                    <h3 id="footer-profesionales">Profesionales</h3>
+                    <ul>
+                        <li><a href="/observatorio-turistico">Observatorio turístico</a></li>
+                        <li><a href="/turismo-reuniones">Turismo de Reuniones</a></li>
+                        <li><a href="/prensa-contacto">Prensa: material y contacto</a></li>
+                        <li><a href="/noticias-ente">Noticias del ente de turismo</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Lista 3: Interacción y Contacto -->
+                <nav>
+                    <h3 id="footer-contacto">Contacto e Interacción</h3>
+                    <ul>
+                        <li><a href="/contactate-con-nosotros">Contactate con nosotros</a></li>
+                        <li><a href="/suscribete-newsletter" aria-label="Ir al formulario para suscribirse al Newsletter oficial">Suscríbete al Newsletter</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+    </footer>
+
+    </body>
+
+</html>

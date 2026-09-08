@@ -1,0 +1,178 @@
+/*
+0. Estilos generales
+1. Tipografias
+2. cabecera
+3. footer
+4. responsive
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    /* Evita que el ancho se sume al padding */
+    box-sizing: border-box;
+}
+
+:root{
+    --color-principal: #6666FF;
+    --color-acento: #FF6666;
+    --color-acento2: #66FF66;
+    --color-texto: #1a045d;
+}
+
+.hide {
+    display: none;
+}
+
+.flex-elements {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+img {
+    width: 100%;
+}
+
+/* 1. Tipografías */
+
+h1 {
+
+  font-family: "Caacupe One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+    color: var(--color-principal)
+}
+
+h2 {
+    font-family: "Montserrat", system-ui;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 30px;
+  color: var(--color-acento);
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+h3 {
+    font-family: "Montserrat", system-ui;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 22px;
+  text-align: justify;
+  color: var(--color-acento2)
+}
+
+p {
+    font-family: "Lato", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  text-align: justify;
+  color: var(--color-texto)
+}
+
+.bt-mas{
+    font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(143, 0, 191);
+  /* transicion: duracion caracteristica animacion */
+  transition: 0.3s all linear;
+  margin: 15px 0;
+  display: inline-block;
+}
+
+.bt-mas:hover{
+    color: var(--color-acento);
+    padding: 8px 20px;
+}
+
+/* 2. Cabecera */
+
+#cabecera-web{
+    background-color: #9999FF;
+
+    /* relleno: top right bottom left */
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    /* border bottom: grosor estilo color;*/
+    border-bottom: 4px solid var(--color-principal)
+
+}
+
+.bt-principal {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  background: var(--color-principal);
+  padding: 12px 25px;
+  border-radius: 10px;
+
+  /* animacion por transición: duración animación característica animación*/
+    transition: 0.3s all linear;
+
+}
+
+.bt-principal:hover{
+background: var(--color-acento);
+padding: 12px 30px;
+}
+
+/* 3.Seleccion destacada */
+#wrap-destacadas {
+    padding: 100px 8px
+}
+
+.articulo-index{
+    margin: 10px 15px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.8);
+}
+
+/* 4. Seccion video experiencias */
+#wrap-experiencias{
+    background: var(--color-principal);
+    padding: 100px 0;
+}
+
+#wrap-experienciash2{
+    color: white;
+
+}
+
+/* ========================= */
+@media (max-width: 600px) {
+    #cabecera-web{
+    flex-direction: column;
+    }
+    #cabecera-web > nav{
+        width: 100%;}
+
+    .bt-principal{
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius:0%;
+        border-bottom: 1px  solid var(--color-acento)
+    }
+}
+
+.footer-brand {
+    /* Si el contenedor abarcaba todo el ancho, asegúrate de que sea flexible o inline */
+    text-align: left; 
+}
+
+.footer-brand img {
+    width: 150px; /* Cambia este valor a uno más pequeño (ej. 120px o 100px) según prefieras */
+    height: auto; /* Mantiene la proporción para que no se deforme */
+    display: block; /* Evita espacios raros debajo de la imagen */
+}
